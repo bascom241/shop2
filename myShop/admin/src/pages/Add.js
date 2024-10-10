@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+
 import './Add.css'
 import { asets } from '../assets/asset'
 import { useState } from 'react'
@@ -77,7 +77,7 @@ const Add = () => {
                 <div className='add-img-upload flex-col'>
                     <p>Upload Image</p>
                     <label htmlFor='image'>
-                        <img src={image ? URL.createObjectURL(image) : asets.uploadIcon} />
+                        <img src={image ? URL.createObjectURL(image) : asets.uploadIcon} alt='' />
                     </label>
                     <input
                         type='file'
