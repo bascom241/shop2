@@ -9,7 +9,7 @@ import { FaPlus } from 'react-icons/fa';
 import { AdminContext } from '../context/adminContext';
 
 const SideBar = () => {
-    const {toggleSidebar,isOpen} = useContext(AdminContext)
+    const {isOpen} = useContext(AdminContext)
     return (
         <div className='container'>
               <div className={`sideBar-container ${isOpen ? 'visible' : 'hidden'}`}>
