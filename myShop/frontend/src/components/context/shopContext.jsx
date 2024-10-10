@@ -5,7 +5,7 @@ export const ShopContext = createContext(null);
 
 
 const ShopContextProvider = (props) => {
-    const url = 'https://shop2-1.onrender.com';
+    const url = 'https://backend-abdulbasits-projects-70099814.vercel.app/';
     const [cart, setCart] = useState([])
     const [list, setList] = useState([]);
     const [isCartOpen, setIsCartOpen] = useState(false);
