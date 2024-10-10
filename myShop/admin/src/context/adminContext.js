@@ -55,7 +55,7 @@ const AdminContextProvider = (props) => {
         localStorage.setItem('list', JSON.stringify(list));
     }, [list]);
 
-    const url = "http://localhost:8000";
+    const url = "https://shop2-1.onrender.com";
 
     const fetchOrders = async () => {
         try {
