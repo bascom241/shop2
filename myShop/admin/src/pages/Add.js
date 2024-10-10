@@ -8,8 +8,8 @@ import { AdminContext } from '../context/adminContext'
 import { useContext } from 'react'
 const Add = () => {
 
-    const { token } = useContext(AdminContext)
-    const url = "http://localhost:8000";
+    const { token,url } = useContext(AdminContext)
+
     const [image, setImage] = useState(false);
     const [data, setData] = useState({
         name: "",
