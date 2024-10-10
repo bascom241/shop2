@@ -55,7 +55,7 @@ const AdminContextProvider = (props) => {
         localStorage.setItem('list', JSON.stringify(list));
     }, [list]);
 
-    const url = "https://shop2-1.onrender.com";
+    const url = "https://backend-abdulbasits-projects-70099814.vercel.app/";
 
     const fetchOrders = async () => {
         try {
