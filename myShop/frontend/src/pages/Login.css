@@ -1,0 +1,158 @@
+.signInPageContainer{
+
+    font-family: "Roboto", sans-serif;
+    color: rgb(10, 10, 56);
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+.signInBox{
+    width: 50%;
+    background-color: rgb(230, 231, 232);
+    padding: 20px 50px;
+    letter-spacing: 1px;
+   
+}
+.signInBox p{
+    color: rgb(10, 10, 56,0.6) ;
+}
+.signInBox h2{
+    margin: 20px 0px;
+}
+.signInBox ul{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 40px;
+    color: rgb(10, 10, 56,0.6) ;
+
+}
+.signInBox ul a{
+    background-color:rgb(10, 10, 56) ;
+    padding: 10px 50px ;
+    color: white;
+margin: 15px 0px;
+    display: flex;
+    align-items: center;
+    border: 2px solid rgb(10, 10, 56) ;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.signInBox ul a:hover{
+    background-color: white;
+    color: rgb(10, 10, 56) ;
+}
+
+.sign-form-container{
+    width: 50%;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sign-form-container div input{
+    width: 90%;
+    padding: 15px 20px;
+    margin-top: 5px;
+    outline: none;
+}
+
+.lo-pasword{
+    position: relative;
+}
+
+.toggle-iconl {
+    position: absolute;
+    right: 70px; 
+    cursor: pointer;
+
+    top: 40px;
+}
+.overall{
+    margin: 8rem;
+}
+.overall h1{
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    letter-spacing: 2px;
+    color: rgb(10, 10, 56) ;
+}
+.submit2{
+    background-color:rgb(10, 10, 56) ;
+    padding: 10px 50px ;
+    color: white;
+    width: 50%;
+   
+    border: 2px solid rgb(10, 10, 56) ;
+    transition: all 0.3s ease-in-out;
+
+}
+.submit2:hover{
+    background-color: white;
+    color: rgb(10, 10, 56) ;
+}
+.forgot-your-password{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.forgot-your-password p{
+    text-decoration: underline;
+    color: rgb(10, 10, 56,0.6) ;
+}
+
+@media screen and (max-width:700px) {
+    .signInPageContainer{
+
+     
+        display: flex;
+        flex-direction: column;
+      gap: 30px;
+      
+    }
+    .signInBox{
+        width: 100%;   
+      font-size: 0.9rem;
+    }
+
+    .sign-form-container{
+        width: 100%;
+     
+    }
+   
+
+
+ 
+    .overall{
+        margin: 8rem 1rem ;
+    }
+    .forgot-your-password{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .signInBox ul{
+       
+        gap: 10px;
+        padding-left: 20px;
+      
+    
+    }
+    .signInBox ul a{
+       
+        padding: 10px ;
+     
+       
+        text-align: center;
+      
+    
+    }
+    
+}

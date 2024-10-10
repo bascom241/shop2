@@ -1,0 +1,31 @@
+/* Layout styles */
+.layout-container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    height: 100vh; /* Full height */
+    margin-top: 3rem;
+}
+
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 5fr; /* Default layout */
+    flex-grow: 1; /* Allow the content to grow */
+    gap: 5rem;
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        grid-template-columns: 1fr; /* Stack sidebar and content on mobile */
+        gap: 0rem;
+        
+    }
+
+    .layout-container {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        height: 100vh; /* Full height */
+        margin-top: 0rem;
+    }
+}
+
+

@@ -1,0 +1,105 @@
+.register-container{
+    margin: 8rem;
+    font-family: "Roboto", sans-serif;
+    color: rgb(10, 10, 56);
+}
+.form-container{
+    margin: 0px 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 1.1rem;
+}
+
+.first-div{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    flex-direction: column;
+}
+.first-div input{
+    padding: 15px;
+    outline: none;
+  width: 100%;
+}
+
+
+.second-div div{
+    position: relative;
+}
+
+.toggle-icon {
+    position: absolute;
+    right: 10px; 
+    cursor: pointer;
+
+    top: 35px;
+}
+.second-div{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+.second-div div{
+    width: 50%;
+    
+}
+.second-div input{
+    padding: 15px;
+    outline: none;
+  width: 100%;
+}
+.submit{
+    background-color: rgb(10, 10, 56);
+    width: 50%;
+    margin: auto;
+    padding: 10px 20px;
+    border: 2px solid rgb(10, 10, 56);
+    color: white;
+    transition: all 0.3s ease ;
+}
+.submit:hover{
+    background-color: white;
+    color:rgb(10, 10, 56) ;
+}
+.signup{
+    color: black;
+}
+.signup span{
+    color:rgb(10, 10, 56) ;
+    text-decoration: underline;
+}
+
+.pass-style li{
+    color:rgb(10, 10, 56,0.7) ;
+}
+
+
+
+
+
+
+@media screen and (max-width:700px) {
+    .pass-style li{
+        color:rgb(10, 10, 56,0.7) ;
+        font-size: 0.8rem;
+    }
+    .register-container{
+        margin: 8rem 0px;
+      
+    }
+    .second-div{
+        display: flex;
+        width: 100%;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .second-div div{
+        width: 100%;
+    }
+    .second-div div input{
+        width: 100%;
+    }
+}
+

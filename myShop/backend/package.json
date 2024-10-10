@@ -1,0 +1,36 @@
+{
+
+  "scripts": {
+
+    "start": "nodemon server.js"
+
+  },
+
+  "dependencies": {
+
+    "axios": "^1.7.7",
+
+    "bcryptjs": "^2.4.3",
+
+    "cloudinary": "^1.21.0",
+
+    "cors": "^2.8.5",
+
+    "dotenv": "^16.4.5",
+
+    "express": "^4.21.0",
+
+    "jsonwebtoken": "^9.0.2",
+
+    "mongoose": "^5.13.22",
+
+    "multer": "^1.4.5-lts.1",
+
+    "multer-storage-cloudinary": "^4.0.0",
+
+    "validator": "^13.12.0"
+
+  }
+
+}
+

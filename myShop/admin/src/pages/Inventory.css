@@ -1,0 +1,91 @@
+/* General Styles */
+
+
+.inventory-container {
+  /* Space around the content */
+    margin: auto; /* Centers the container */
+    max-width: 1200px; /* Limits max width */
+    width: 100%; /* Ensures full width */
+    margin-top: 6rem;
+    padding: 0px;
+}
+
+.inventory-wrapper {
+    overflow-x: auto; /* Allows horizontal scrolling if needed */
+}
+
+.inventory-table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Collapse borders */
+}
+
+.inventory-table caption {
+    font-size: 1.5rem; /* Caption size */
+    margin: 10px 0; /* Margin for spacing */
+}
+
+.inventory-table th, .inventory-table td {
+    padding: 12px; /* Padding for cells */
+    text-align: left; /* Align text left */
+    border-bottom: 1px solid #ddd; /* Border between rows */
+}
+
+.inventory-table th {
+    background-color: #5b5b5b; /* Header background */
+}
+
+.product-image {
+    width: 50px; /* Image size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.remove-button {
+    background-color: #e74c3c; /* Button background */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    padding: 10px 15px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+}
+
+.remove-button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .inventory-table {
+        font-size: 0.9rem; /* Smaller font size */
+    }
+
+    .product-image {
+        width: 40px; /* Smaller images */
+    }
+
+    .remove-button {
+        padding: 8px 12px; /* Adjust button padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .inventory-container {
+        padding: 0px; /* Less padding on mobile */
+    }
+
+    .inventory-table {
+        font-size: 0.8rem; /* Smaller font size */
+    }
+
+    .product-image {
+        width: 30px; /* Even smaller images */
+    }
+
+    .remove-button {
+        padding: 5px 10px; /* Further adjust button padding */
+    }
+
+    .inventory-table th, .inventory-table td {
+        padding: 18px; /* Less padding for mobile */
+    }
+}

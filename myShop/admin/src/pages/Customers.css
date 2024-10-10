@@ -1,0 +1,76 @@
+.container {
+
+    max-width: 1200px;
+   margin-top: 3rem;
+   padding: 5px;
+}
+
+.wrapper {
+    overflow-x: auto; /* Allows horizontal scrolling if needed */
+}
+
+.table {
+    width: 100%; /* Ensure the table takes full width */
+    border-collapse: collapse;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+caption {
+    color: black;
+    margin: 10px 0;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    min-width: 100px; /* Prevent cells from being too narrow */
+}
+
+th {
+    background-color: black;
+    color: white;
+}
+
+tr:nth-of-type(even) {
+    background-color: rgb(188, 188, 188);
+}
+
+.remove {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    background-color: red;
+}
+
+/* Media Queries */
+@media (max-width: 650px) {
+    .table {
+        width: 100%;
+        display: block; /* Make the table block for better control */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        white-space: nowrap; /* Prevent text from wrapping */
+        font-size: 0.73rem;
+    }
+
+    th {
+        display: none; /* Hide headers on small screens */
+    }
+
+    td {
+        display: grid;
+        grid-template-columns: 1fr; /* Stack cells vertically */
+        gap: 0.5rem;
+     
+    }
+
+    td::before {
+        content: attr(data-cell) ":";
+        font-weight: bold; /* Improve visibility */
+        text-transform: capitalize;
+    }
+}
