@@ -5,7 +5,7 @@ export const ShopContext = createContext(null);
 
 
 const ShopContextProvider = (props) => {
-    const url = 'http://localhost:8000';
+    const url = 'https://shop2-1.onrender.com';
     const [cart, setCart] = useState([])
     const [list, setList] = useState([]);
     const [isCartOpen, setIsCartOpen] = useState(false);
