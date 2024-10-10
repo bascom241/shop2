@@ -3,7 +3,7 @@ import './Home.css'
 import Image1 from '../images/Image3.jpg'
 import Slider from '../components/Slider/Slider'
 import products from './../../data'
-import Sub from '../images/EarPod1.png'
+
 import { NavLink, Link } from 'react-router-dom'
 import NewProduct from '../components/NewProduct/NewProduct'
 import Banner from '../images/Banner3.jpg'
@@ -115,7 +115,7 @@ const Home = () => {
           </div>
 
           <div className='sub'>
-            <img src={Sub} alt={Sub}/>
+            <img src={Image1} alt={Sub}/>
             <div className='sub-text'>
               <h1>Stay Updated with Our Latest News!</h1>
               <h3>Join our community and be the first to know about: </h3>
