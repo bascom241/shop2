@@ -115,7 +115,7 @@ const Home = () => {
           </div>
 
           <div className='sub'>
-            <img src={sub} />
+            <img src={Sub} />
             <div className='sub-text'>
               <h1>Stay Updated with Our Latest News!</h1>
               <h3>Join our community and be the first to know about: </h3>
