@@ -85,7 +85,7 @@ const AdminContextProvider = (props) => {
             setTotalRevenue(revenue);
             localStorage.setItem('totalRevenue', JSON.stringify(revenue)); // Save revenue to localStorage
         } catch (err) {
-            console.error(err);
+            toast.error('Error Fetching orders')
         }
     };
 
