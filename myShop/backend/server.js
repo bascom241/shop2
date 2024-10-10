@@ -9,7 +9,7 @@ const mongoose = require('mongoose');
 dotenv.config({path:'./.env'});
 const data = process.env.DATABASE_URL
 mongoose.connect(data, {
-    useUnifiedTopology:false,
+    useUnifiedTopology: true,
     useFindAndModify:false,
     useNewUrlParser:true,
     useCreateIndex:true
