@@ -23,7 +23,7 @@ const Inventory = () => {
 
   useEffect(() => {
     fetchItems();
-  }, []);
+  });
 
   const handleRemoveProduct = async (productId) => {
     try {
