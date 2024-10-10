@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useEffect, useContext } from 'react';
 import './Inventory.css';
 import axios from 'axios';
 import { toast } from 'react-toastify';
